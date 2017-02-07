@@ -68,7 +68,7 @@ context "Driving & Flying" do
               ).to eq(true)
     end
 
-    it "Can be fly like a plane" do
+    it "Can fly like a plane" do
         logger = false
         expect(FlyingCar.new(Car.new(logger=logger), Plane.new(logger=logger), logger=logger)
                         .fly("home")
